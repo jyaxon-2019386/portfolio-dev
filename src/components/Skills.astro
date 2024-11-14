@@ -1,59 +1,72 @@
 ---
+import { manifest } from "astro:ssr-manifest";
+
 const skills = [
   {
     name: "HTML",
-    image: "/projects/html5.svg", 
+    image: "/src/skill.img/html5.svg", 
     porcentage: 90,
   },
   {
     name: "CSS",
-    image: "/projects/css.svg", 
-    porcentage: 85,
+    image: "/src/skill.img/css.svg", 
+    porcentage: 80,
   },
   {
     name: "JavaScript",
-    image: "/projects/javascript.svg", 
+    image: "/src/skill.img/javascript.svg", 
     porcentage: 80,
   },
   {
     name: "React",
-    image: "/projects/react.svg", 
-    porcentage: 80,
+    image: "/src/skill.img/react.svg", 
+    porcentage: 75,
   },
   {
     name: "Node.js",
-    image: "/projects/nodejs.svg",
-    porcentage: 85,
-  },
-  {
-    name: "Java",
-    image: "/projects/java.svg",
-    porcentage: 85,
-  },
-  {
-    name: "MySQL",
-    image: "/projects/mysql.svg",
+    image: "/src/skill.img/nodejs.svg",
     porcentage: 80,
   },
   {
+    name: "Java",
+    image: "/src/skill.img/java.svg",
+    porcentage: 80,
+  },
+  {
+    name: "C#",
+    image: "/src/skill.img/csharp.svg",
+    porcentage: 60, 
+  },
+  {
+    name: "MySQL",
+    image: "/src/skill.img/mysql.svg",
+    porcentage: 80,
+  },
+  {
+    name: "PHP",
+    imageLight: "/src/skill.img/php_lightsvg.svg",
+    imageDark: "/src/skill.img/php_dark.svg",
+    porcentage: 60 
+  },
+  {
     name: "MongoDB",
-    image: "/projects/mongodb.svg",
-    porcentage: 85,
+    image: "/src/skill.img/mongodb.svg",
+    porcentage: 80,
   },
   {
     name: "Express",
-    imageLight: "/projects/Express.js_light.svg",
-    imageDark: "/projects/Express.js_dark.svg",
+    imageLight: "/src/skill.img/Express.js_light.svg",
+    imageDark: "/src/skill.img/Express.js_dark.svg",
     porcentage: 80,
   },
   {
     name: "TailwindCSS",
-    image: "/projects/tailwindcss.svg",
-    porcentage: 85,
+    image: "/src/skill.img/tailwindcss.svg",
+    porcentage: 75,
   },
   {
     name: "Git",
-    image: "/projects/git.svg",
+    image: "/src/skill.img/git.svg",
     porcentage: 85,
   },
 ];
