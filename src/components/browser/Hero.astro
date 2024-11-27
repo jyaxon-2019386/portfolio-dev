@@ -1,0 +1,52 @@
+---
+const personalImageAlt = "Juan Pablo";
+// import Badge from "../components/Badge.astro";
+// import LinkedInIcon from "../components/Icons/Linkedin.astro";
+// import MailIcon from "../components/Icons/Mail.astro";
+// import SocialPill from "../components/SocialPill.astro";
+
+import Badge from "./Badge.astro";
+import LinkedInIcon from "../icons/Linkedin.astro";
+import MailIcon from "../icons/Mail.astro";
+import SocialPill from "../social/SocialPill.astro";
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="/my-profile.webp"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://linkedin.com/in/dev-juan-pablo"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hey, soy Juan Pablo
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+    <strong>Desarrollador Full Stack </strong>especializado en <strong>MERN stack</strong> y aplicaciones de escritorio con 
+    <strong>Java</strong> y <strong>C#</strong>. Creo soluciones <strong>escalables </strong>y optimizadas, combinando experiencia en desarrollo web
+    y <strong>multiplataforma</strong>. Enfocado en la <strong>experiencia </strong>del usuario.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:juanpabloyaxon@gmail.com">
+      <MailIcon class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill href="https://linkedin.com/in/dev-juan-pablo">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+  </nav>
+</div>
